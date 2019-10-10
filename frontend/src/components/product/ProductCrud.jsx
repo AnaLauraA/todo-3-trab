@@ -69,7 +69,7 @@ export default class ProductCrud extends Component {
                     <div className="col-12 col-md-6">
                         <div className="form-group">
                             <label>Quantidade</label>
-                            <input type="text" className="form-control"
+                            <input type="number" className="form-control"
                                 name="quantity"
                                 value={this.state.product.quantity}
                                 onChange={e => this.updateField(e)}
