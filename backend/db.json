@@ -14,16 +14,34 @@
       "name": "Thiago",
       "email": "thiago@thiago.com.br",
       "id": 3
+    },
+    {
+      "name": "Saulo",
+      "email": "sauloandrade@gmail.com",
+      "id": 4
     }
   ],
   "products": [
     {
-      "id": "1",
+      "id": 1,
       "description": "Sabonete",
       "quantity": "10",
       "price": "3",
       "brand": "Phebo"
+    },
+    {
+      "description": "Fermento em po",
+      "quantity": "50",
+      "price": "5,0",
+      "brand": "Po Royal",
+      "id": 2
+    },
+    {
+      "description": "Arroz",
+      "quantity": "30",
+      "price": "20,00",
+      "brand": "Broto Legal",
+      "id": 3
     }
   ]
-
 }

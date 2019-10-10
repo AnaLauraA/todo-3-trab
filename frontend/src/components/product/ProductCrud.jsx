@@ -8,7 +8,7 @@ const headerProps = {
     subtitle: 'Cadastro de produtos: Incluir, Listar, Alterar e Excluir!'
 }
 
-const baseUrl = 'http://localhost:3001/product'
+const baseUrl = 'http://localhost:3001/products'
 const initialState = {
     product: {description: '', quantity: '', price: '', brand:'' },
     list: []
@@ -51,7 +51,6 @@ export default class ProductCrud extends Component {
         product[event.target.name] = event.target.value
         this.setState({ product })
     }
-
     renderForm() {
         return (
             <div className="form">
