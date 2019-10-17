@@ -11,6 +11,7 @@ const headerProps = {
 const baseUrl = 'http://localhost:3001/products'
 const baseUrlUsers = 'http://localhost:3001/users'
 
+
 const initialState = {
     product: {description: '', quantity: '', price: '', brand:'', id_user: '' },
     list: [],
@@ -110,7 +111,7 @@ export default class ProductCrud extends Component {
                             <select 
                                 className="form-control"
                                 name="id_user"
-                                value={this.state.products.id_user}
+                                value={this.state.product.id_user}
                                 onChange={e => this.updateField(e)}>
                                     {
                                       this.state.listUsers.map(users => {
