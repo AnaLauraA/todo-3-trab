@@ -27,14 +27,14 @@
       "quantity": "30",
       "price": "20,00",
       "brand": "Broto Legal",
-      "id": 3
+      "id_user": 3
     },
     {
       "description": "Feijão",
       "quantity": "50",
       "price": "2.00",
       "brand": "Carunchao",
-      "id": 4
+      "id_user": 4
     }
   ],
   "shopping": [
