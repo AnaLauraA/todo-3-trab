@@ -76,7 +76,7 @@ export default class ShoppingCrud extends Component {
                                 onChange={e => this.updateField(e)}>
                                 {
                                     this.state.listUsers.map(users => {
-                                        return <option value={users.id}> {users.name} </option>
+                                        return <option value={users.name}> {users.name} </option>
                                     })
                                 }
                             </select>
@@ -91,7 +91,7 @@ export default class ShoppingCrud extends Component {
                                 onChange={e => this.updateField(e)}>
                                 {
                                     this.state.listProducts.map(products => {
-                                        return <option value={products.id}> {products.description} </option>
+                                        return <option value={products.description}> {products.description} </option>
                                     })
                                 }
                             </select>

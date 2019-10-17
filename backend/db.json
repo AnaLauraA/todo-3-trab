@@ -39,11 +39,32 @@
   ],
   "shopping": [
     {
-      "id_user": 1,
-      "id_product": 2,
-      "quantity": 3,
-      "price": 2.00,
+      "id_user": "Maria Julia da Silva",
+      "id_product": "Feijão",
+      "quantity": "3",
+      "price": "4",
       "id": 1
+    },
+    {
+      "id_user": "Maria Julia da Silva",
+      "id_product": "Carunchao",
+      "quantity": "2",
+      "price": "2",
+      "id": 2
+    },
+    {
+      "id_user": "",
+      "id_product": "",
+      "quantity": "",
+      "price": "",
+      "id": 3
+    },
+    {
+      "id_user": "Thiago",
+      "id_product": "Broto Legal",
+      "quantity": "2",
+      "price": "1",
+      "id": 4
     }
   ]
 }
