@@ -15,5 +15,8 @@ export default props =>
             <Link to="/products">
             <i class="fa fa-inbox"></i> Produtos
             </Link>
+            <Link to="/shop">
+            <i class="fa fa-inbox"></i> Compras
+            </Link>
         </nav>
     </aside>

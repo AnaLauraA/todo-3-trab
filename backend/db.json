@@ -23,20 +23,6 @@
   ],
   "products": [
     {
-      "id": 1,
-      "description": "Sabonete",
-      "quantity": "10",
-      "price": "3",
-      "brand": "Phebo"
-    },
-    {
-      "description": "Fermento em po",
-      "quantity": "50",
-      "price": "5,0",
-      "brand": "Po Royal",
-      "id": 2
-    },
-    {
       "description": "Arroz",
       "quantity": "30",
       "price": "20,00",

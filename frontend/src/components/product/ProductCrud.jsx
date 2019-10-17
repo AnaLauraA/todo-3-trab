@@ -9,11 +9,13 @@ const headerProps = {
 }
 
 const baseUrl = 'http://localhost:3001/products'
-const initialState = {
-    product: {description: '', quantity: '', price: '', brand:'' },
-    list: []
+const baseUrlUsers = 'http://localhost:3001/users'
 
-    }
+const initialState = {
+    product: {description: '', quantity: '', price: '', brand:'', id_usuario: '' },
+    list: [],
+    listUsers: []
+}
 
 export default class ProductCrud extends Component {
 
@@ -22,6 +24,9 @@ export default class ProductCrud extends Component {
     componentWillMount() {
         axios(baseUrl).then(resp => {
             this.setState({ list: resp.data })
+        })
+        axios(baseUrlUsers).then(resp => {
+            this.setState({ listUsers: resp.data })
         })
     }
 
@@ -99,7 +104,22 @@ export default class ProductCrud extends Component {
                         </div>
                     </div>
                 </div>
-
+                <div className="col-12 col-md-6">
+                        <div className="form-group">
+                            <label>Usuário</label>
+                            <select 
+                                className="form-control"
+                                name="id_usuario"
+                                value={this.state.products.id_usuario}
+                                onChange={e => this.updateField(e)}>
+                                    {
+                                      this.state.listUsers.map(users => {
+                                        return <option value={users.id}> {users.name} </option>
+                                    })
+                                    }
+                            </select>
+                        </div>
+                </div>
                 <hr />
                 <div className="row">
                     <div className="col-12 d-flex justify-content-end">
@@ -139,6 +159,8 @@ export default class ProductCrud extends Component {
                         <th>Quantidade</th>
                         <th>Preço</th>
                         <th>Marca</th>
+                        <th>Usuário</th>
+                        <th>Ações</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -157,6 +179,7 @@ export default class ProductCrud extends Component {
                     <td>{product.quantity}</td>
                     <td>{product.price}</td>
                     <td>{product.brand}</td>
+                    <td>{product.id_usuario}</td>
                     <td>
                         <button className="btn btn-warning"
                             onClick={() => this.load(product)}>
