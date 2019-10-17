@@ -36,5 +36,14 @@
       "brand": "Carunchao",
       "id": 4
     }
+  ],
+  "shopping": [
+    {
+      "id_user": 1,
+      "id_product": 2,
+      "quantity": 3,
+      "price": 2.00,
+      "id": 1
+    }
   ]
 }
